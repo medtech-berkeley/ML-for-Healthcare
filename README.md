@@ -1,5 +1,7 @@
 # ML/Data Science for Healthcare
 
+![]("https://www.codecogs.com/eqnedit.php?latex=\displaystyle\hat{y}&space;=&space;f(x)&space;=&space;\frac{1}{1&space;&plus;&space;e^{-w^Tx}}&space;\in&space;[0,1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\displaystyle\hat{y}&space;=&space;f(x)&space;=&space;\frac{1}{1&space;&plus;&space;e^{-w^Tx}}&space;\in&space;[0,1]" title="\displaystyle\hat{y} = f(x) = \frac{1}{1 + e^{-w^Tx}} \in [0,1]")
+
 ## What is Machine Learning?
 
 Machine learning is when a computer has been taught to recognize patterns by providing it with data and an algorithm to help understand that data.
