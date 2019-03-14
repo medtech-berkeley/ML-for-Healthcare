@@ -44,8 +44,8 @@ When we are classifying data, we want to find some boundary that divides our spa
 In general, our model needs to have 2 things:
 
 
-1. a ***predictor*** function: $$f$$, that maps input data to a predicted label
-2. a ***loss*** function: $$L$$, that maps a predicted label to a loss value
+1. a ***predictor*** function: $f$, that maps input data to a predicted label
+2. a ***loss*** function: $L$, that maps a predicted label to a loss value
 
 Once we have these two things defined for us, we can ***optimize*** our predictor function so that it predicts a label as well as possible.  In other words, we want to ***minimize*** our loss.  
 
@@ -74,15 +74,15 @@ To better model this, we use ***logistic regression*** to find these probabiliti
 ![](https://d2mxuefqeaa7sj.cloudfront.net/s_B573EEDBADB84059279FDEBC36E02F1848CF93650EE1B337E3406E49DD7BB676_1552527081334_image.png)
 
 
-The general form of the logistic model is: $$$$
+The general form of the logistic model is:
 
 
-                $$\displaystyle\hat{y} = f(x) = \frac{1}{1 + e^{-w^Tx}} \in [0,1]$$ 
+$$\displaystyle\hat{y} = f(x) = \frac{1}{1 + e^{-w^Tx}} \in [0,1]$$ 
 
-represents the probability that $$x$$ results in a yes.  Our loss function is ***Cross Entropy Loss****:*
+which represents the probability that $x$ results in a yes.  Our loss function is ***Cross Entropy Loss***:
 
 
-              $$\displaystyle L = -\sum_{i=1}^ny_i\log(\hat{y_i}) - (1 - y_i)\log(1 - \hat{y_i})$$
+$$\displaystyle L = -\sum_{i=1}^ny_i\log(\hat{y_i}) - (1 - y_i)\log(1 - \hat{y_i})$$
 
 (we will get to the reasoning another day).
 
@@ -113,10 +113,10 @@ Test time: you are given an unlabeled point (from the test set). To predict its 
 **What does is mean to be “near”?**
 The K-Nearest Neighbors algorithm generally uses ***euclidean distance*** to quantify how near or far two points in the data are from each other.
 
-Let $$x\in\mathbb{R}^n$$ be one data point and $$x'\in\mathbb{R}^n$$ be another data point (*note: these are both vectors*). The ***euclidean distance*** between these two points would be:
+Let $x\in\mathbb{R}^n$ be one data point and $x'\in\mathbb{R}^n$ be another data point (*note: these are both vectors*). The ***euclidean distance*** between these two points would be:
 
 
-                $$\displaystyle d(x, x') = \sqrt{\sum_{i=1}^n(x_i - x'_i)^2}$$
+$$\displaystyle d(x, x') = \sqrt{\sum_{i=1}^n(x_i - x'_i)^2}$$
 
 **What is K??**
 K is a ***hyperparameter***. You choose it. Here's a nice visualization of the effect of K on classification.
