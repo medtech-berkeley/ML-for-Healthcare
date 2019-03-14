@@ -1,5 +1,9 @@
 # ML/Data Science for Healthcare
 
+{% raw %}
+  $$a^2 + b^2 = c^2$$
+{% endraw %}
+
 ## What is Machine Learning?
 
 Machine learning is when a computer has been taught to recognize patterns by providing it with data and an algorithm to help understand that data.
